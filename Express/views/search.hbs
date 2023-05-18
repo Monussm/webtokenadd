@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>School Managment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body>
+    <header>
+        {{>navbar}}
+    </header>
+    <main>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form action="/search" method="post">
+            <input class="mt-2 inputoutline" type="date" style="width: 100%;" name="date" id="search">
+            <button class="mt-2 buttonlogin" type="submit" style="width: 100%;">Click here</button>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-3">
+            <div class="p-3">
+              <p>Name</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3">
+            <div class="p-3">
+              <p>Rollno</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3">
+            <div class="p-3">
+              <p>Class</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3">
+            <div class="p-3">
+              <p>Radio</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          {{#each radiocheck}}
+           <div class="col-md-3 col-sm-3">
+            <div class="p-3">
+              <p>{{name}}</p>
+            </div>
+          </div>
+           <div class="col-md-3 col-sm-3">
+            <div class="p-3">
+              <p>{{rollno}}</p>
+            </div>
+          </div>
+           <div class="col-md-3 col-sm-3">
+            <div class="p-3">
+              <p>{{class}}</p>
+            </div>
+          </div>
+           <div class="col-md-3 col-sm-3">
+            <div class="p-3">
+              <p>{{radio}}</p>
+            </div>
+          </div>
+          {{/each}}
+        
+           
+         
+      </div>
+      </div>
+
+
+        </main>
+
+
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+  </body>
+</html>

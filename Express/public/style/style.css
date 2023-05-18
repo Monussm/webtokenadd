@@ -1,0 +1,136 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+body{
+
+background-color: #fae8e8;
+
+
+
+}
+
+.imagecontainer{
+/* background-image: url(..//image/kid_transparent.png.webp);
+background-size: auto;
+background-repeat: no-repeat;
+/* background-position: center; */
+/* height: 500px; */ 
+background-color: rgb(211, 211, 217);
+
+
+
+
+}
+.learnmore{
+display: block;
+text-decoration: none;
+color: white;
+background-color: brown;
+width: 130px;
+height: 30px;
+text-align: center;
+padding: 2px 3px;
+border-radius: 30px;
+border-top-right-radius: 0;
+border-bottom-left-radius: 0;
+
+
+}
+.moreaboutus{
+    display: block;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 195px;
+   height: 50px;
+
+}
+
+.buttonlogin{
+ background-color:rgb(46 95 201 / 89%);
+ color: white;
+ font-size: 20px;
+ font-weight: bold;
+ height: 39px;
+ border: 0;
+ border-radius: 10px;
+
+
+
+}
+.adminlogin{
+    border: 2px #fdfdfd solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 18px -8px black;
+    width: 350px;
+    margin-left: 33%;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.inputoutline{
+
+border: 2px solid rgb(210, 209, 209);
+border-radius: 5px;
+
+
+}
+::placeholder{
+padding: 2px;
+
+
+
+}
+.attenshow{
+
+    height: 40px;
+    color: rgb(255 255 255);
+   border-radius: 10px;
+    background-color: rgb(179 39 39);
+
+
+
+
+}
+.data{
+
+
+    height: 81px;
+    color: rgb(255 255 255);
+    border-radius: 10px;
+    background-color: rgb(225 79 15 / 65%);
+    padding: 13px 10px;
+
+
+
+}
+
+.date{
+
+font-size: 15px;
+
+}
+@media screen and (max-width: 764px) {
+
+    .adminlogin{
+    
+     margin-left: 17%;
+
+
+
+    }
+
+   
+  }
